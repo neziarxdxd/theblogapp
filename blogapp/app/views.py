@@ -9,9 +9,9 @@ def myName(request):
 
     return HttpResponse("testing xxD")
 def show_blog_post(request):
-    obj = BlogPost.objects.get(id=1)
+    obj = BlogPost.objects.all()
     context= {
-        'blog':obj
+        'blogs':obj
     }
     
     return render(request,"blogpost.html",context)

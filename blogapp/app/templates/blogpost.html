@@ -1,7 +1,17 @@
 {% block content %}
-<h1>{{blog.blogTitle}} </h1>
-{{blog.blogDatePost}}
-<p>
-    {{blog.blogContent}}
-</p>
+<html>
+<title> {{"dfd"}}</title>
+<body>
+
+
+{% for blog in blogs  %}
+    <h1>{{blog.blogTitle}} </h1>
+        {{blog.blogDatePost}}
+    <p>
+        {{blog.blogContent}}
+    </p>
+{% endfor %}
+
 {% endblock %}
+</body>
+</html>
