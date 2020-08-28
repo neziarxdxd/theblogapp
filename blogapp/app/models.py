@@ -8,6 +8,9 @@ class BlogPost(models.Model):
 
     def __str__(self):
         return self.blogTitle
+class SkillsAndTechnology(models.Model):
+    nameSkill = models.CharField(max_length=500)
+    contentSkills = models.JSONField(encoder="")
 
 
 
