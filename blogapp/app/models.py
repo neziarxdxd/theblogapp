@@ -10,7 +10,8 @@ class BlogPost(models.Model):
         return self.blogTitle
 class SkillsAndTechnology(models.Model):
     nameSkill = models.CharField(max_length=500)
-    contentSkills = models.JSONField(encoder="")
+    contentSkills = models.TextField()
+    
 
 
 
