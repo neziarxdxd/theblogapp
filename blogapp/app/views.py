@@ -4,7 +4,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from .models import BlogPost
 def index(request):
-    return HttpResponse("Hello, World!")
+    return render(request,"index/index.html")
 def myName(request):
 
     return HttpResponse("testing xxD")
