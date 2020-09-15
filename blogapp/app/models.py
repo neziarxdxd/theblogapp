@@ -11,6 +11,7 @@ class BlogPost(models.Model):
 class SkillsAndTechnology(models.Model):
     nameSkill = models.CharField(max_length=500)
     contentSkills = models.TextField()
+    testing = models.TextField()
     
 
 
